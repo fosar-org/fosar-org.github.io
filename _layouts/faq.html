@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<article class="faq-container">
+    {% for item in site.data.faq %}
+    <div class="question-block">
+        <header class="question-header">
+            <h1 class="question-title">{{ item.question | escape }}</h1>
+        </header>
+        {% if item.response_type == "list" %}
+        <ul class="answer-list">
+            {% for answer in item.answer %}
+            <li class="answer-item">{{ answer }}</li>
+            {% endfor %}
+        </ul>
+        {% else %}
+        <p class="answer-text">{{ item.answer }}</p>
+        {% endif %}
+    </div>
+    {% endfor %}
+</article>

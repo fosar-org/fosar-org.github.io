@@ -1,0 +1,27 @@
+- question: What is the FOSAR mission?
+  response_type: text
+  answer: Boston Engineering’s FOSAR is the answer to today’s maintenance workforce shortages and skilled knowledge loss issues. Through a family of interconnected robotics, platforms, and systems, the challenges associated with maintaining equipment and systems readiness can be turned from a persistent problem to a long term advantage by employing existing technologies in innovative ways.
+- question: What issues does FOSAR overcome?
+  response_type: list
+  answer:
+    - The industrial base has significantly deteriorated over past two decades.
+    - Years of knowledge is being lost with the retiring workforce.
+    - New workforce is not excited or attracted to sustainment and maintenance jobs.
+    - Budgets shortfalls requires establishment of cost efficient and effective solutions.
+    - Weapon system availabilities still too low.
+- question: How does FOSAR solve these issues?
+  response_type: list
+  answer:
+    - Significant cost reductions in capital, manpower training, and operational execution
+    - Extending capabilities, increasing safety,reducing physical demands on activities performed, shortening equipment downtime
+    - Addresses workforce retirement and shortages in the maintenance and sustaining environments
+    - Straightforward integration with modular architectures and universal equipment
+- question: What technologies does FOSAR target?
+  response_type: list
+  answer:
+    - Multi-Mission Vehicle Platforms
+    - Payload Integrations
+    - Secure AR-Assisted Remote Video
+    - Worker Expert Guidance
+    - Product/Systems Engineering & Design
+    - Sensors, End Effectors, and Manipulators
