@@ -4,31 +4,77 @@ layout: default
 
 <div class="home">
   {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
+  <h1 class="page-heading">{{ page.title }}</h1>
   {%- endif -%}
 
+  <!-- SPLASH HERO -->
+  <section class="hero">
+    <h1>Family of Shipyard Assisting Robotics</h1>
+    <br />
+  </section>
+
+  <section class="section" style="max-width: 900px">
+    <h2>A Force Multiplier</h2>
+    <p>
+      The Family of Shipyard Assisting Robotics (FOSAR) initiative represents a
+      groundbreaking approach to advancing shipyard automation and robotics.
+      Designed to address the growing complexity of naval sustainment while
+      fostering collaboration across the supply chain, FOSAR is positioned to
+      play a transformative role in shipyard operations in 2025. By leveraging
+      modular, scalable, and flexible technologies, FOSAR promotes innovation
+      while ensuring compatibility across diverse platforms and applications.
+    </p>
+  </section>
+
+  <!-- VIDEO -->
+  <section
+    class="video-container"
+    style="display: flex; justify-content: center; margin: 40px 0"
+  >
+    <div
+      style="
+        position: relative;
+        width: 90%;
+        max-width: 1200px; /* increased from 900px */
+        padding-bottom: 56.25%;
+        height: 0;
+      "
+    >
+      <iframe
+        src="https://www.youtube.com/embed/FbuqdjSVHRU"
+        title="FOSAR Overview"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%"
+      >
+      </iframe>
+    </div>
+  </section>
+
+  <!-- NATIONAL INITIATIVE -->
+  <section class="section" style="max-width: 900px">
+    <h2>National Initiative</h2>
+    <p>
+      FOSAR operates as a national-level initiative, bringing together Boston
+      Engineering and other partners to create common tools and capabilities
+      under a unified platform. By fostering commonality of design and
+      operation, utilizing open software development, and integrating advanced
+      sensors and communications equipment, FOSAR optimizes sustainment efforts.
+    </p>
+  </section>
+
+  <!-- CAPABILITIES -->
+  <section class="section" style="max-width: 900px">
+    <h2>Connected, Future-Facing Capabilities</h2>
+    <p>
+      The inclusion of digital tools for data visualization and network
+      connectivity further enhances the overall solution, creating a
+      comprehensive and forward-looking approach to both sustainment and
+      robotics.
+    </p>
+  </section>
+
+  <!-- Page markdown content (optional, if you want to add some in index.md) -->
   {{ content }}
-
-  {%- if site.posts.size > 0 -%}
-    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
-    <ul class="post-list">
-      {%- for post in site.posts -%}
-      <li>
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
-        {%- endif -%}
-      </li>
-      {%- endfor -%}
-    </ul>
-
-    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
-  {%- endif -%}
-
 </div>
